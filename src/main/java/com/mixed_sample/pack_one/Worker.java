@@ -1,4 +1,4 @@
-package com.other_samples.pack_one;
+package com.mixed_sample.pack_one;
 
 import java.util.concurrent.CountDownLatch;
 

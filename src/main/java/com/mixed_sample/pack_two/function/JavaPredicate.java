@@ -1,4 +1,4 @@
-package com.other_samples.pack_two.function;
+package com.mixed_sample.pack_two.function;
 
 import java.util.*;
 import java.util.function.Predicate;

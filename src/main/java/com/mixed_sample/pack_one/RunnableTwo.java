@@ -1,6 +1,6 @@
-package com.other_samples.pack_one;
+package com.mixed_sample.pack_one;
 
-public class RunnableTwo implements Runnable{
+public class RunnableTwo implements Runnable {
     private final ConstantTwo constantTwo;
 
     public RunnableTwo(ConstantTwo constantTwo) {

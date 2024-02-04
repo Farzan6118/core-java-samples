@@ -1,4 +1,4 @@
-package com.other_samples.pack_two.stream;
+package com.mixed_sample.pack_two.stream;
 
 import java.math.BigDecimal;
 import java.math.BigInteger;

@@ -1,4 +1,4 @@
-package com.other_samples.pack_one;
+package com.mixed_sample.pack_one;
 
 public enum ConstantTwo {
     KOTLIN("kotlin", "23423423"), JAVA("java", "sdfsdfsf");
@@ -15,10 +15,10 @@ public enum ConstantTwo {
         return key;
     }
 
-    public String getValue() {
-        return value;
+    public void setKey(String key) {
     }
 
-    public void setKey(String key) {
+    public String getValue() {
+        return value;
     }
 }

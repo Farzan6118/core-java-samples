@@ -1,4 +1,4 @@
-package com.tree_traversing.model;
+package com.tree_traverse.binary_tree.model;
 
 public class Node {
     private Integer id;

@@ -1,7 +1,7 @@
-package com.other_samples.pack_one;
+package com.mixed_sample.pack_one;
 
 public enum TestEnum {
-d(2), r(4);
+    d(2), r(4);
 
 
     private final int s;

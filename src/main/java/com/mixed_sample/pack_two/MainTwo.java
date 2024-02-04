@@ -1,7 +1,7 @@
-package com.other_samples.pack_two;
+package com.mixed_sample.pack_two;
 
 
-import com.other_samples.pack_two.function.JavaBiConsumer;
+import com.mixed_sample.pack_two.function.JavaBiConsumer;
 
 public class MainTwo {
 

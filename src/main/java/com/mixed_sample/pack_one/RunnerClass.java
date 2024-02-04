@@ -1,12 +1,13 @@
-package com.other_samples.pack_one;
+package com.mixed_sample.pack_one;
 
 public class RunnerClass implements Runnable {
-    private Integer counter = 0;
     final Object lock = new Object();
+    private Integer counter = 0;
+
     @Override
     public void run() {
 
-            System.out.println(++counter);
+        System.out.println(++counter);
 
     }
 }
