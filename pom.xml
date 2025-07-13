@@ -5,8 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>samples</groupId>
-    <artifactId>core-java-samples</artifactId>
+    <artifactId>core-java-practices</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <developers>
+        <developer>
+            <name>farzan saketi</name>
+            <email>farzan.6118@gmail.com</email>
+        </developer>
+    </developers>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>

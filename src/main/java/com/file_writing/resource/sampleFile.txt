@@ -1,1 +1,0 @@
-Employee{name='devil', salary='18000000', age=40, phoneNumber='09516526563'}
