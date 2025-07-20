@@ -2,10 +2,12 @@ package com.practice.collections.exercises.two;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
-public class Inquiry {
+@ToString
+public class DeviceOne {
     private Integer id;
     private String code;
     private String title;

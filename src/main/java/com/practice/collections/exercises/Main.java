@@ -5,8 +5,8 @@ import com.practice.collections.exercises.two.MapFilterDemo;
 
 public class Main {
     public static void main(String[] args) {
-        one();
-//        two();
+//        one();
+        two();
     }
 
     public static void one() {
@@ -15,7 +15,12 @@ public class Main {
     }
 
     public static void two() {
-        new MapFilterDemo().concatTwoListInOneMapDemoOne();
+        MapFilterDemo mapFilterDemo = new MapFilterDemo();
+        mapFilterDemo.mapMatchingCodesToDeviceTwoIds();
+        mapFilterDemo.printDeviceOneList();
+        mapFilterDemo.printDeviceTwoList();
+
+        mapFilterDemo.printMatchedDeviceTwoIds();
     }
 
 
