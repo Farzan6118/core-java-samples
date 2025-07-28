@@ -1,9 +1,12 @@
 package com.practice.exceptions.exercises.one;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.EOFException;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+@Slf4j
 public class StudentExceptions {
 
     public void throwUncheckedExceptions(int age) {
@@ -39,7 +42,33 @@ public class StudentExceptions {
                 throw new EOFException("Age is 20");
             }
         } catch (IOException | ClassNotFoundException e) {
-            throw new RuntimeException("Wrapped exception: " + e.getMessage(), e);
+            log.error("Wrapped exception: {}", e.getMessage(), e);
+        }
+    }
+
+    public void throwCheckedExceptionsWithTryWithResource(int age) {
+        try (DummyResource resource = new DummyResource()) {
+            if (age == 18) {
+                throw new IOException("Age is 18");
+            } else if (age == 19) {
+                throw new ClassNotFoundException("Age is 19");
+            } else if (age == 20) {
+                throw new EOFException("Age is 20");
+            }
+        } catch (IOException | ClassNotFoundException e) {
+            log.error("Wrapped exception: {}", e.getMessage(), e);
+        }
+    }
+
+    // Dummy AutoCloseable for try-with-resources
+    static class DummyResource implements AutoCloseable {
+        public DummyResource() {
+            log.info("DummyResource opened");
+        }
+
+        @Override
+        public void close() {
+            log.info("DummyResource closed");
         }
     }
 }
