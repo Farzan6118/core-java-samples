@@ -1,4 +1,4 @@
-package com.java.practice.threads.exercises.one.constant;
+package com.practice.threads.exercises.one.constant;
 
 public enum Language {
     JAVA,

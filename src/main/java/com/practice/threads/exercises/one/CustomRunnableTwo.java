@@ -1,6 +1,7 @@
-package com.java.practice.threads.exercises.one;
+package com.practice.threads.exercises.one;
 
-import com.java.practice.threads.exercises.one.constant.Language;
+
+import com.practice.threads.exercises.one.constant.Language;
 
 public class CustomRunnableTwo implements Runnable {
     private final Language language;
